@@ -19,6 +19,7 @@ public class Service {
      */
     public Status checkStatus(String group) {
         int count = dao.getStoreCount(group);
+//        boolean result = dao.isUserExist(username);
 
         if (count <= 0) {
             return Status.UNKOWN;
@@ -29,6 +30,11 @@ public class Service {
         } else {
             return Status.SELLINGWELL;
         }
+    }
+
+    public boolean isUserExist(String username) {
+       return dao.isUserExist(username);
+
     }
 
     public static void main(String[] args){

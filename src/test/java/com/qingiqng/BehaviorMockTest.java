@@ -14,7 +14,7 @@ public class BehaviorMockTest {
      * record: 自己设置数据，对于那些希望在测试中被模拟的模块
      * replay: 执行单元测试
      * verfiy:
-     * */
+     */
 
 //    @Mocked
 //    TestDao dao = new TestDao();
@@ -40,4 +40,6 @@ public class BehaviorMockTest {
 
         Assert.assertEquals(Status.NORMAL, service.checkStatus("D"));
     }
+
+
 }
