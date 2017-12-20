@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JMockit Coverage Report - TestDao.java</title>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'/>
+  <link rel='stylesheet' type='text/css' href='../../../coverage.css'/>
+  <link rel='shortcut icon' type='image/png' href='../../../logo.png'/>
+  <script type='text/javascript' src='../../../coverage.js'></script>
+  <script type='text/javascript' src='../../../prettify.js'></script>
+</head>
+<body onload='prettyPrint()'>
+  <table cellpadding='0' cellspacing='1'>
+    <caption>jmockit-demo\src\main\java\com\qingqing\dao\TestDao.java</caption>
+    <tr>
+      <td class='line'>1</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>package com.qingqing.dao;</pre></td>
+    </tr>
+    <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
+    <tr>
+      <td class='line'></td><td>&nbsp;</td>
+      <td><pre class='imports prettyprint' onclick='showHideLines(this)'><div>import java.util.HashMap;
+import java.util.Map;
+</div><span>import ...</span></pre></td>
+    </tr>
+    <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
+    <tr>
+      <td class='line'>6</td><td class='count'>0</td>
+      <td><pre class='prettyprint uncovered' id='l6s0'>public class TestDao {</pre></td>
+    </tr>
+    <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
+    <tr>
+      <td class='line'>8</td><td>&nbsp;</td>
+      <td><pre class='comment'>    // 假设DAO实现的方式是从数据库中取出数据</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>9</td><td class='count'>1</td>
+      <td><pre class='prettyprint covered' id='l9s0'>    private static Map&lt;String, Integer> groupsCounts = new HashMap&lt;String, Integer>();</pre></td>
+    </tr>
+    <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
+    <tr>
+      <td class='line'>11</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    static {</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>12</td><td class='count'>1</td>
+      <td><pre class='prettyprint covered' id='l12s0'>        groupsCounts.put("A", 500);</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>13</td><td class='count'>1</td>
+      <td><pre class='prettyprint covered' id='l13s0'>        groupsCounts.put("B", 1000);</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>14</td><td class='count'>1</td>
+      <td><pre class='prettyprint covered' id='l14s0'>        groupsCounts.put("C", 1200);</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>15</td><td class='count'>1</td>
+      <td><pre class='prettyprint covered' id='l15s0'>    }</pre></td>
+    </tr>
+    <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
+    <tr>
+      <td class='line'>17</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    public int getStoreCount(String group){</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>18</td><td class='count'>0</td>
+      <td><pre class='prettyprint uncovered' id='l18s0'>        Integer result = groupsCounts.get(group);</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>19</td><td class='count'>0</td>
+      <td><pre class='prettyprint jmp'>        <span id='l19s0' title='Executions: 0' class='uncovered'>return result == null ? -1</span> : <span id='l19s1' title='Executions: 0' class='uncovered'>result.intValue();</span></pre></td>
+    </tr>
+    <tr>
+      <td class='line'>20</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    }</pre></td>
+    </tr>
+    <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
+    <tr>
+      <td class='line'>22</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>}</pre></td>
+    </tr>
+  </table>
+</body>
+</html>
