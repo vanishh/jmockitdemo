@@ -2,7 +2,10 @@ package com.qingiqng;
 
 import com.qingqing.dao.TestDao;
 import com.qingqing.service.Service;
-import mockit.*;
+import mockit.Injectable;
+import mockit.Mock;
+import mockit.MockUp;
+import mockit.Tested;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -25,19 +28,22 @@ public class StatusMockTest {
             }
         };
 
-        new NonStrictExpectations() {
-            {
-                dao.isUserExist(anyString);
-                result = true;
+        // 3. 调用
+        Assert.assertEquals(Status.SELLINGWELL, service.checkStatus("A"));
+//        Assert.assertEquals(true, service.isUserExist("nihao"));
+    }
+
+    @Test
+    public void testAddUser(){
+        new MockUp<TestDao>() {
+            @Mock
+            public void insertUser(User user){
+                user.setName("geyang");
             }
         };
-
-        // 2. 获取实例
-//        dao = mockUp.getMockInstance();
-
-        // 3. 调用
-        Assert.assertEquals(Status.SELLINGWELL, service.checkStatus("D"));
-        Assert.assertEquals(true, service.isUserExist("nihao"));
+        User user = new User();
+        user.setName("qingqing");
+        service.addUser(user);
     }
 
 }

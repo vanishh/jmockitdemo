@@ -1,6 +1,7 @@
 package com.qingqing.service;
 
 import com.qingiqng.Status;
+import com.qingiqng.User;
 import com.qingqing.dao.TestDao;
 
 /**
@@ -35,6 +36,10 @@ public class Service {
     public boolean isUserExist(String username) {
        return dao.isUserExist(username);
 
+    }
+
+    public void addUser(User user) {
+        dao.insertUser(user);
     }
 
     public static void main(String[] args){

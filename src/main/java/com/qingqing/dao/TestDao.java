@@ -1,5 +1,7 @@
 package com.qingqing.dao;
 
+import com.qingiqng.User;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -31,5 +33,9 @@ public class TestDao {
         }
         return result;
 //        return username != null ? username.contains(username) : false;
+    }
+
+    public void insertUser(User user){
+        System.out.println("dao added user:" + user);
     }
 }

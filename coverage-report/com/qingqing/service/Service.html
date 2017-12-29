@@ -19,6 +19,7 @@
     <tr>
       <td class='line'></td><td>&nbsp;</td>
       <td><pre class='imports prettyprint' onclick='showHideLines(this)'><div>import com.qingiqng.Status;
+import com.qingiqng.User;
 import com.qingqing.dao.TestDao;
 </div><span>import ...</span></pre></td>
     </tr>
@@ -30,26 +31,26 @@ import com.qingqing.dao.TestDao;
  */</div><span>/*...*/</span></td>
     </tr>
     <tr>
-      <td class='line'>9</td><td class='count'>1</td>
-      <td><pre class='prettyprint covered' id='l9s0'>public class Service {</pre></td>
+      <td class='line'>10</td><td class='count'>1</td>
+      <td><pre class='prettyprint covered' id='l10s0'>public class Service {</pre></td>
     </tr>
     <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
     <tr>
-      <td class='line'>11</td><td>&nbsp;</td>
+      <td class='line'>12</td><td>&nbsp;</td>
       <td><pre class='prettyprint'>    private TestDao dao;</pre></td>
     </tr>
     <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
     <tr>
-      <td class='line'>13</td><td>&nbsp;</td>
+      <td class='line'>14</td><td>&nbsp;</td>
       <td><pre class='prettyprint'>    public void setDao(TestDao dao) {</pre></td>
     </tr>
     <tr>
-      <td class='line'>14</td><td class='count'>0</td>
-      <td><pre class='prettyprint uncovered' id='l14s0'>        this.dao = dao;</pre></td>
+      <td class='line'>15</td><td class='count'>0</td>
+      <td><pre class='prettyprint uncovered' id='l15s0'>        this.dao = dao;</pre></td>
     </tr>
     <tr>
-      <td class='line'>15</td><td class='count'>0</td>
-      <td><pre class='prettyprint uncovered' id='l15s0'>    }</pre></td>
+      <td class='line'>16</td><td class='count'>0</td>
+      <td><pre class='prettyprint uncovered' id='l16s0'>    }</pre></td>
     </tr>
     <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
     <tr>
@@ -59,108 +60,121 @@ import com.qingqing.dao.TestDao;
      */</div><span>    /*...*/</span></td>
     </tr>
     <tr>
-      <td class='line'>20</td><td>&nbsp;</td>
+      <td class='line'>21</td><td>&nbsp;</td>
       <td><pre class='prettyprint'>    public Status checkStatus(String group) {</pre></td>
     </tr>
     <tr>
-      <td class='line'>21</td><td class='count'>1</td>
-      <td><pre class='prettyprint covered' id='l21s0'>        int count = dao.getStoreCount(group);</pre></td>
+      <td class='line'>22</td><td class='count'>0</td>
+      <td><pre class='prettyprint uncovered' id='l22s0'>        int count = dao.getStoreCount(group);</pre></td>
     </tr>
     <tr>
-      <td class='line'>22</td><td>&nbsp;</td>
+      <td class='line'>23</td><td>&nbsp;</td>
       <td><pre class='comment'>//        boolean result = dao.isUserExist(username);</pre></td>
     </tr>
     <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
     <tr>
-      <td class='line'>24</td><td class='count'>1</td>
-      <td><pre class='prettyprint jmp'>        <span id='l24s0' title='Executions: 1' class='covered'>if (count &lt;= 0)</span> <span id='l24s1' title='Executions: 0' class='uncovered'>{</span></pre></td>
-    </tr>
-    <tr>
       <td class='line'>25</td><td class='count'>0</td>
-      <td><pre class='prettyprint uncovered' id='l25s0'>            return Status.UNKOWN;</pre></td>
+      <td><pre class='prettyprint jmp'>        <span id='l25s0' title='Executions: 0' class='uncovered'>if (count &lt;= 0)</span> <span id='l25s1' title='Executions: 0' class='uncovered'>{</span></pre></td>
     </tr>
     <tr>
-      <td class='line'>26</td><td class='count'>1</td>
-      <td><pre class='prettyprint jmp'>        <span id='l26s0' title='Executions: 1' class='covered'>}</span> else <span id='l26s1' title='Executions: 0' class='uncovered'>if (count &lt;= 800)</span> </pre></td>
+      <td class='line'>26</td><td class='count'>0</td>
+      <td><pre class='prettyprint uncovered' id='l26s0'>            return Status.UNKOWN;</pre></td>
     </tr>
     <tr>
       <td class='line'>27</td><td class='count'>0</td>
-      <td><pre class='prettyprint uncovered' id='l27s0'>            return Status.UNSALABLE;</pre></td>
+      <td><pre class='prettyprint jmp'>        <span id='l27s0' title='Executions: 0' class='uncovered'>}</span> else <span id='l27s1' title='Executions: 0' class='uncovered'>if (count &lt;= 800)</span> </pre></td>
     </tr>
     <tr>
-      <td class='line'>28</td><td class='count'>1</td>
-      <td><pre class='prettyprint jmp'>        <span id='l28s0' title='Executions: 1' class='covered'>}</span> else <span id='l28s1' title='Executions: 0' class='uncovered'>if (count &lt;= 1000)</span> </pre></td>
+      <td class='line'>28</td><td class='count'>0</td>
+      <td><pre class='prettyprint uncovered' id='l28s0'>            return Status.UNSALABLE;</pre></td>
     </tr>
     <tr>
       <td class='line'>29</td><td class='count'>0</td>
-      <td><pre class='prettyprint uncovered' id='l29s0'>            return Status.NORMAL;</pre></td>
+      <td><pre class='prettyprint jmp'>        <span id='l29s0' title='Executions: 0' class='uncovered'>}</span> else <span id='l29s1' title='Executions: 0' class='uncovered'>if (count &lt;= 1000)</span> </pre></td>
     </tr>
     <tr>
-      <td class='line'>30</td><td>&nbsp;</td>
+      <td class='line'>30</td><td class='count'>0</td>
+      <td><pre class='prettyprint uncovered' id='l30s0'>            return Status.NORMAL;</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>31</td><td>&nbsp;</td>
       <td><pre class='prettyprint'>        } else {</pre></td>
     </tr>
     <tr>
-      <td class='line'>31</td><td class='count'>1</td>
-      <td><pre class='prettyprint covered' id='l31s0'>            return Status.SELLINGWELL;</pre></td>
-    </tr>
-    <tr>
-      <td class='line'>32</td><td>&nbsp;</td>
-      <td><pre class='prettyprint'>        }</pre></td>
+      <td class='line'>32</td><td class='count'>0</td>
+      <td><pre class='prettyprint uncovered' id='l32s0'>            return Status.SELLINGWELL;</pre></td>
     </tr>
     <tr>
       <td class='line'>33</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>        }</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>34</td><td>&nbsp;</td>
       <td><pre class='prettyprint'>    }</pre></td>
     </tr>
     <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
     <tr>
-      <td class='line'>35</td><td>&nbsp;</td>
+      <td class='line'>36</td><td>&nbsp;</td>
       <td><pre class='prettyprint'>    public boolean isUserExist(String username) {</pre></td>
     </tr>
     <tr>
-      <td class='line'>36</td><td class='count'>1</td>
-      <td><pre class='prettyprint covered' id='l36s0'>       return dao.isUserExist(username);</pre></td>
+      <td class='line'>37</td><td class='count'>0</td>
+      <td><pre class='prettyprint uncovered' id='l37s0'>       return dao.isUserExist(username);</pre></td>
     </tr>
     <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
     <tr>
-      <td class='line'>38</td><td>&nbsp;</td>
+      <td class='line'>39</td><td>&nbsp;</td>
       <td><pre class='prettyprint'>    }</pre></td>
     </tr>
     <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
     <tr>
-      <td class='line'>40</td><td>&nbsp;</td>
-      <td><pre class='prettyprint'>    public static void main(String[] args){</pre></td>
+      <td class='line'>41</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    public void addUser(User user) {</pre></td>
     </tr>
     <tr>
-      <td class='line'>41</td><td class='count'>0</td>
-      <td><pre class='prettyprint uncovered' id='l41s0'>        Service service = new Service();</pre></td>
+      <td class='line'>42</td><td class='count'>1</td>
+      <td><pre class='prettyprint covered' id='l42s0'>        dao.insertUser(user);</pre></td>
     </tr>
     <tr>
-      <td class='line'>42</td><td class='count'>0</td>
-      <td><pre class='prettyprint uncovered' id='l42s0'>        TestDao dao = new TestDao();</pre></td>
-    </tr>
-    <tr>
-      <td class='line'>43</td><td class='count'>0</td>
-      <td><pre class='prettyprint uncovered' id='l43s0'>        service.setDao(dao);</pre></td>
+      <td class='line'>43</td><td class='count'>1</td>
+      <td><pre class='prettyprint covered' id='l43s0'>    }</pre></td>
     </tr>
     <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
     <tr>
-      <td class='line'>45</td><td class='count'>0</td>
-      <td><pre class='prettyprint uncovered' id='l45s0'>        System.out.println(service.checkStatus("A"));</pre></td>
+      <td class='line'>45</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    public static void main(String[] args){</pre></td>
     </tr>
     <tr>
       <td class='line'>46</td><td class='count'>0</td>
-      <td><pre class='prettyprint uncovered' id='l46s0'>        System.out.println(service.checkStatus("B"));</pre></td>
+      <td><pre class='prettyprint uncovered' id='l46s0'>        Service service = new Service();</pre></td>
     </tr>
     <tr>
       <td class='line'>47</td><td class='count'>0</td>
-      <td><pre class='prettyprint uncovered' id='l47s0'>        System.out.println(service.checkStatus("D"));</pre></td>
+      <td><pre class='prettyprint uncovered' id='l47s0'>        TestDao dao = new TestDao();</pre></td>
     </tr>
     <tr>
       <td class='line'>48</td><td class='count'>0</td>
-      <td><pre class='prettyprint uncovered' id='l48s0'>    }</pre></td>
+      <td><pre class='prettyprint uncovered' id='l48s0'>        service.setDao(dao);</pre></td>
+    </tr>
+    <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
+    <tr>
+      <td class='line'>50</td><td class='count'>0</td>
+      <td><pre class='prettyprint uncovered' id='l50s0'>        System.out.println(service.checkStatus("A"));</pre></td>
     </tr>
     <tr>
-      <td class='line'>49</td><td>&nbsp;</td>
+      <td class='line'>51</td><td class='count'>0</td>
+      <td><pre class='prettyprint uncovered' id='l51s0'>        System.out.println(service.checkStatus("B"));</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>52</td><td class='count'>0</td>
+      <td><pre class='prettyprint uncovered' id='l52s0'>        System.out.println(service.checkStatus("D"));</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>53</td><td class='count'>0</td>
+      <td><pre class='prettyprint uncovered' id='l53s0'>    }</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>54</td><td>&nbsp;</td>
       <td><pre class='prettyprint'>}</pre></td>
     </tr>
   </table>
