@@ -28,9 +28,7 @@ public class StatusMockTest {
             }
         };
 
-        // 3. 调用
         Assert.assertEquals(Status.SELLINGWELL, service.checkStatus("A"));
-//        Assert.assertEquals(true, service.isUserExist("nihao"));
     }
 
     @Test
