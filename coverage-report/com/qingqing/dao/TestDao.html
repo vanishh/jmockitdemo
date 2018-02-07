@@ -28,50 +28,50 @@ import java.util.Map;
     </tr>
     <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
     <tr>
-      <td class='line'>10</td><td class='count'>0</td>
-      <td><pre class='prettyprint uncovered' id='l10s0'>public class TestDao {</pre></td>
+      <td class='line'>10</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>public class TestDao {</pre></td>
     </tr>
     <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
     <tr>
       <td class='line'>12</td><td>&nbsp;</td>
-      <td><pre class='comment'>    // 假设DAO实现的方式是从数据库中取出数据</pre></td>
+      <td><pre class='comment'>    // 假设DAO实现的方式是从数据库中取出数�?</pre></td>
     </tr>
     <tr>
-      <td class='line'>13</td><td class='count'>1</td>
-      <td><pre class='prettyprint covered' id='l13s0'>    private static Map&lt;String, Integer> groupsCounts = new HashMap&lt;String, Integer>();</pre></td>
+      <td class='line'>13</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    private static Map&lt;String, Integer> groupsCounts = new HashMap&lt;String, Integer>();</pre></td>
     </tr>
     <tr>
-      <td class='line'>14</td><td class='count'>1</td>
-      <td><pre class='prettyprint covered' id='l14s0'>    private static List&lt;String> username = new ArrayList&lt;String>();</pre></td>
+      <td class='line'>14</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    private static List&lt;String> username = new ArrayList&lt;String>();</pre></td>
     </tr>
     <tr>
       <td class='line'>15</td><td>&nbsp;</td>
       <td><pre class='prettyprint'>    static {</pre></td>
     </tr>
     <tr>
-      <td class='line'>16</td><td class='count'>1</td>
-      <td><pre class='prettyprint covered' id='l16s0'>        groupsCounts.put("A", 500);</pre></td>
+      <td class='line'>16</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>        groupsCounts.put("A", 500);</pre></td>
     </tr>
     <tr>
-      <td class='line'>17</td><td class='count'>1</td>
-      <td><pre class='prettyprint covered' id='l17s0'>        groupsCounts.put("B", 1000);</pre></td>
+      <td class='line'>17</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>        groupsCounts.put("B", 1000);</pre></td>
     </tr>
     <tr>
-      <td class='line'>18</td><td class='count'>1</td>
-      <td><pre class='prettyprint covered' id='l18s0'>        groupsCounts.put("C", 1200);</pre></td>
+      <td class='line'>18</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>        groupsCounts.put("C", 1200);</pre></td>
     </tr>
     <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
     <tr>
-      <td class='line'>20</td><td class='count'>1</td>
-      <td><pre class='prettyprint covered' id='l20s0'>        username.add("geyang");</pre></td>
+      <td class='line'>20</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>        username.add("geyang");</pre></td>
     </tr>
     <tr>
-      <td class='line'>21</td><td class='count'>1</td>
-      <td><pre class='prettyprint covered' id='l21s0'>        username.add("qingqing");</pre></td>
+      <td class='line'>21</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>        username.add("qingqing");</pre></td>
     </tr>
     <tr>
-      <td class='line'>22</td><td class='count'>1</td>
-      <td><pre class='prettyprint covered' id='l22s0'>    }</pre></td>
+      <td class='line'>22</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    }</pre></td>
     </tr>
     <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
     <tr>
@@ -79,12 +79,12 @@ import java.util.Map;
       <td><pre class='prettyprint'>    public int getStoreCount(String group){</pre></td>
     </tr>
     <tr>
-      <td class='line'>25</td><td class='count'>0</td>
-      <td><pre class='prettyprint uncovered' id='l25s0'>        Integer result = groupsCounts.get(group);</pre></td>
+      <td class='line'>25</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>        Integer result = groupsCounts.get(group);</pre></td>
     </tr>
     <tr>
-      <td class='line'>26</td><td class='count'>0</td>
-      <td><pre class='prettyprint jmp'>        <span id='l26s0' title='Executions: 0' class='uncovered'>return result == null ? -1</span> : <span id='l26s1' title='Executions: 0' class='uncovered'>result.intValue();</span></pre></td>
+      <td class='line'>26</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>        return result == null ? -1 : result.intValue();</pre></td>
     </tr>
     <tr>
       <td class='line'>27</td><td>&nbsp;</td>
@@ -96,24 +96,24 @@ import java.util.Map;
       <td><pre class='prettyprint'>    public boolean isUserExist(String username) {</pre></td>
     </tr>
     <tr>
-      <td class='line'>30</td><td class='count'>0</td>
-      <td><pre class='prettyprint uncovered' id='l30s0'>        boolean result = false;</pre></td>
+      <td class='line'>30</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>        boolean result = false;</pre></td>
     </tr>
     <tr>
-      <td class='line'>31</td><td class='count'>0</td>
-      <td><pre class='prettyprint jmp'>        <span id='l31s0' title='Executions: 0' class='uncovered'>if (username != null)</span><span id='l31s1' title='Executions: 0' class='uncovered'>{</span></pre></td>
+      <td class='line'>31</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>        if (username != null){</pre></td>
     </tr>
     <tr>
-      <td class='line'>32</td><td class='count'>0</td>
-      <td><pre class='prettyprint uncovered' id='l32s0'>            result = username.contains(username);</pre></td>
+      <td class='line'>32</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>            result = username.contains(username);</pre></td>
     </tr>
     <tr>
       <td class='line'>33</td><td>&nbsp;</td>
       <td><pre class='prettyprint'>        }</pre></td>
     </tr>
     <tr>
-      <td class='line'>34</td><td class='count'>0</td>
-      <td><pre class='prettyprint uncovered' id='l34s0'>        return result;</pre></td>
+      <td class='line'>34</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>        return result;</pre></td>
     </tr>
     <tr>
       <td class='line'>35</td><td>&nbsp;</td>
@@ -129,12 +129,12 @@ import java.util.Map;
       <td><pre class='prettyprint'>    public void insertUser(User user){</pre></td>
     </tr>
     <tr>
-      <td class='line'>39</td><td class='count'>0</td>
-      <td><pre class='prettyprint uncovered' id='l39s0'>        System.out.println("dao added user:" + user);</pre></td>
+      <td class='line'>39</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>        System.out.println("dao added user:" + user);</pre></td>
     </tr>
     <tr>
-      <td class='line'>40</td><td class='count'>0</td>
-      <td><pre class='prettyprint uncovered' id='l40s0'>    }</pre></td>
+      <td class='line'>40</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    }</pre></td>
     </tr>
     <tr>
       <td class='line'>41</td><td>&nbsp;</td>
